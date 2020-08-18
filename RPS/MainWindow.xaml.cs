@@ -70,7 +70,7 @@ namespace RPS
         }
         async void Wait()
         {
-            await Task.Delay(1000);
+            await Task.Delay(2000);
             ReactivareButtons();
         }
         private void ScoreCalculate()

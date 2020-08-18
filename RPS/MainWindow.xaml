@@ -1,0 +1,29 @@
+﻿<Window x:Class="RPS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RPS"
+        mc:Ignorable="d"
+        Title="Sten Saks Papir" Height="450" Width="800">
+    <Grid>
+        <Button Content="Sten" Name="Sten" HorizontalAlignment="Left" Margin="177,348,0,0" VerticalAlignment="Top" Height="21" Width="45" Click="Sten_Click"/>
+        <Button Content="Saks" Name="Saks" HorizontalAlignment="Left" Margin="177,374,0,0" VerticalAlignment="Top" Height="21" Width="45" Click="Saks_Click"/>
+        <Button Content="Papir" Name="Papir" HorizontalAlignment="Left" Margin="177,400,0,0" VerticalAlignment="Top" Height="21" Width="45" Click="Papir_Click"/>
+        <Image Name="Human" Source="C:/Users/erik2708/source/repos/RPS/RPS/img/Thinking.png" Margin="0,0,397,97"/>
+        <Image Name="AI" Source="C:/Users/erik2708/source/repos/RPS/RPS/img/Thinking.png" Margin="403,-1,0,98" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Rectangle HorizontalAlignment="Center" Height="6" Margin="0,337,0,0" Stroke="Black" VerticalAlignment="Top" Width="800"/>
+        <Rectangle Stroke="Black" Margin="398,0,398,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="410,358,0,0" Text="Score: 0" Name="Score" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
